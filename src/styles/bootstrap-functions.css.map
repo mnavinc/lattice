@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "bootstrap-functions.scss"
+    ],
+    "names": [],
+    "file": "bootstrap-functions.css"
+}

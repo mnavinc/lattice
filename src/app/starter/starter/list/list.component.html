@@ -1,0 +1,61 @@
+<h3>Task Planner</h3>
+<div class="row p-2">
+    <div class="col">
+        <div class="row flex">
+            <div class="col">
+                <input
+                    type="text"
+                    style="padding:8px;margin:15px auto;width:30%;"
+                    placeholder="Type to filter the name column..."
+                    (keyup)="updateFilter($event)"
+                />
+                <button class="button btn-primary btn-large" (click)="open()"><mat-icon>note_add</mat-icon>Add new task</button>
+                <button class="button btn-primary btn-large" (click)="open()"><mat-icon>cloud_download</mat-icon>Import</button>
+                <button class="button btn-primary btn-large" (click)="open()"><mat-icon> import_export</mat-icon>Export</button>
+            </div>
+        </div>
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="columns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="rows"
+          >
+            <ngx-datatable-column name="Task" prop="task"></ngx-datatable-column>
+            <ngx-datatable-column name="Estimated" prop="Estimated"></ngx-datatable-column>
+            <ngx-datatable-column name="Regular Time" prop="Regular Time"></ngx-datatable-column>
+            <ngx-datatable-column name="Over Time" prop="Over Time"></ngx-datatable-column>
+            <ngx-datatable-column name="Total Hours" prop="Total Hours"></ngx-datatable-column>
+
+          </ngx-datatable>
+</div>
+
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <div class="input-group">
+            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template> -->
+  

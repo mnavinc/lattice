@@ -1,0 +1,103 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark">Dashboard</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+
+<div class="content">
+  <div class="container-fluid">
+    <div class="row dashboard">
+      <div class="col">
+        <h3 class="title">Percentage complete by cost code</h3>
+        <div class="bar">
+          <div>
+            <div style="display: block">
+              <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+              </canvas>
+            </div>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Other Options or other comparision buttons here</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tasktracker">
+          <h3>Task Time Tracker</h3>
+          <input
+            type="text"
+            style="padding:8px;margin:15px auto;width:30%;"
+            placeholder="Type to filter the name column..."
+            (keyup)="updateFilter($event)"
+          />
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="columns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="rows"
+          >
+            <ngx-datatable-column name="Task" prop="task"></ngx-datatable-column>
+            <ngx-datatable-column name="Estimated" prop="Estimated"></ngx-datatable-column>
+            <ngx-datatable-column name="Regular Time" prop="Regular Time"></ngx-datatable-column>
+            <ngx-datatable-column name="Over Time" prop="Over Time"></ngx-datatable-column>
+            <ngx-datatable-column name="Total Hours" prop="Total Hours"></ngx-datatable-column>
+
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+    <div class="row dashboard">
+      <div class="col">
+        <h3 class="title">Waste Analysis</h3>
+        <div class="pie">
+          <div>
+            <div class="chart">
+              <canvas baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                [options]="pieChartOptions"
+                [plugins]="pieChartPlugins"
+                [colors]="pieChartColors"
+                [legend]="pieChartLegend">
+              </canvas>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Toggle Legend</button>
+          <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
+          <button mat-button mat-raised-button color="primary" (click)="addSlice()">Add Slice</button>
+          <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remove Slice</button>
+          <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Change Legend Position</button>
+        </div>
+      </div>
+      <div class="col">
+        <h3 class="title">Track movement</h3>
+        <div class="heatmap"></div><img src="../../../../assets/img/heatmap.jpg" alt="Track people movement" />
+      </div>
+    </div>
+  </div>
+</div>

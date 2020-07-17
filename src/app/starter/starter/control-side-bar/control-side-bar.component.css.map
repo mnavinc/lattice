@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "control-side-bar.component.scss"
+    ],
+    "names": [],
+    "file": "control-side-bar.component.css"
+}
