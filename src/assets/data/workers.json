@@ -1,0 +1,48 @@
+[
+    {
+      "FirstName": "Jason N",
+      "Costcode": "1340-22",
+      "Crew": "Concrete",
+      "Company": "JSW",
+      "Beacon ID": "AEDFFEHT22",
+      "Battery": "100%", 
+      "Details": ""
+    },
+    {
+        "FirstName": "Jack M",
+        "Costcode": "1342-40",
+        "Crew": "Foreman",
+        "Company": "JSW",
+        "Beacon ID": "FDHEHEKK40",
+        "Battery": "90%",
+        "Details": ""
+      },
+      {
+        "FirstName": "Chris K",
+        "Costcode": "1343-11",
+        "Crew": "Electrical",
+        "Company": "BUFF",
+        "Beacon ID": "UURRRJJ11",
+        "Battery": "100%", 
+        "Details": ""
+      },
+      {
+        "FirstName": "Rick J",
+        "Costcode": "1345-22",
+        "Crew": "Fittings",
+        "Company": "RF SUBS",
+        "Beacon ID": "TTHJUI22",
+        "Battery": "88%",
+        "Details": ""
+      },
+      {
+        "FirstName": "Andrew L",
+        "Costcode": "1345-89",
+        "Crew": "JCB Operator",
+        "Company": "JSW",
+        "Beacon ID": "RRGHTU89",
+        "Battery": "98%",
+        "Details": ""
+      }
+
+  ]

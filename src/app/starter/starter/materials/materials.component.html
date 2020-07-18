@@ -1,0 +1,70 @@
+<h3>Materials</h3>
+<div class="row p-2">
+    <div class="col">
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="Materialcolumns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="materials"
+          >
+            <ngx-datatable-column name="Material" prop="material"></ngx-datatable-column>
+            <ngx-datatable-column name="Batch No" prop="batch"></ngx-datatable-column>
+            <ngx-datatable-column name="Quantity" prop="quantity"></ngx-datatable-column>
+            <ngx-datatable-column name="Beacon ID" prop="Beacon ID"></ngx-datatable-column>
+            <ngx-datatable-column name="Battery" prop="Battery"></ngx-datatable-column>
+          </ngx-datatable>
+    </div>
+</div>
+
+
+
+<h3>Tools</h3>
+<div class="row p-2">
+    <div class="col">
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="Toolcolumns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="tools"
+          >
+            <ngx-datatable-column name="Tool List" prop="tool"></ngx-datatable-column>
+            <ngx-datatable-column name="Batch" prop="batch"></ngx-datatable-column>
+            <ngx-datatable-column name="Location" prop="location"></ngx-datatable-column>
+          </ngx-datatable>
+    </div>
+</div>
+
+
+<h3>Equipments</h3>
+<div class="row p-2">
+    <div class="col">
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="Equipmentcolumns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="equipments"
+          >
+            <ngx-datatable-column name="Tool List" prop="tool"></ngx-datatable-column>
+            <ngx-datatable-column name="Beacon Code" prop="beaconID"></ngx-datatable-column>
+            <ngx-datatable-column name="Location" prop="location"></ngx-datatable-column>
+          </ngx-datatable>
+    </div>
+</div>
+
+
+  

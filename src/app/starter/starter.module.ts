@@ -19,10 +19,14 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { WorkersComponent } from './starter/workers/workers.component';
+import { MaterialsComponent } from './starter/materials/materials.component';
+import { BudgetComponent } from './starter/budget/budget.component';
+import { TaskManagerComponent } from './starter/task-manager/task-manager.component';
 
 
 @NgModule({
-  declarations: [StarterComponent, ContentComponent, ControlSideBarComponent, MainSideBarComponent, NavBarComponent, FooterComponent, ListComponent, PopupComponent],
+  declarations: [StarterComponent, ContentComponent, ControlSideBarComponent, MainSideBarComponent, NavBarComponent, FooterComponent, ListComponent, PopupComponent, WorkersComponent, MaterialsComponent, BudgetComponent, TaskManagerComponent],
   imports: [
     CommonModule,
     StarterRoutingModule,

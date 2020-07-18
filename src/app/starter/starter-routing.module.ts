@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StarterComponent } from './starter/starter.component';
 import { ListComponent } from './starter/list/list.component';
+import { WorkersComponent } from './starter/workers/workers.component';
+import { MaterialsComponent } from './starter/materials/materials.component';
+import { BudgetComponent } from './starter/budget/budget.component';
+import { TaskManagerComponent } from './starter/task-manager/task-manager.component';
 
 
 const routes: Routes = [
@@ -17,6 +21,22 @@ const routes: Routes = [
       {
         path: 'list',
         component: ListComponent
+      },
+      {
+        path: 'worker',
+        component: WorkersComponent,
+      },
+      {
+        path: 'materials',
+        component: MaterialsComponent,
+      },
+      {
+        path: 'budget',
+        component: BudgetComponent,
+      },
+      {
+        path: 'task-manager',
+        component: TaskManagerComponent,
       }
     ]
   }

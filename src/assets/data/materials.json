@@ -1,0 +1,26 @@
+[
+    {
+        "material": "Glass Facade",
+        "Costcode": "045001",
+        "batch": "FT-45",
+        "quantity": "40",
+        "Beacon ID": "IIJ234",
+        "Battery": "90%"
+    },
+    {
+        "material": "Pre-Fabaricated Wall",
+        "Costcode": "067003",
+        "batch": "KL-45",
+        "quantity": "3",
+        "Beacon ID": "AHJI233",
+        "Battery": "98%"
+    },
+    {
+        "material": "Metal",
+        "Costcode": "077002",
+        "batch": "AE-23",
+        "quantity": "27",
+        "Beacon ID": "HHJJTYCH",
+        "Battery": "100%"
+    }
+]

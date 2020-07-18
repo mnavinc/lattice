@@ -9,6 +9,9 @@
         border-radius: 5px;
         min-width: 768px;
     }
+    button{
+        margin:auto 10px 
+    }
 }
 .ngx-datatable.material{
     box-shadow:none !important
@@ -17,6 +20,7 @@
     text-align:center;
     img{
         margin:auto;
+        height: 398px;
     }
 }
 .dashboard{

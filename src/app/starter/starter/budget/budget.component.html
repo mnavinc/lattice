@@ -1,0 +1,22 @@
+<h3>Budgeting Weekly</h3>
+<div class="row p-2">
+    <div class="col">
+          <ngx-datatable
+            #table
+            class="material"
+            [columns]="columns"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="50"
+            [footerHeight]="50"
+            rowHeight="auto"
+            [limit]="10"
+            [rows]="rows"
+          >
+            <ngx-datatable-column name="Task" prop="task"></ngx-datatable-column>
+            <ngx-datatable-column name="Budget Hours" prop="hours"></ngx-datatable-column>
+            <ngx-datatable-column name="Budget Material" prop="materials"></ngx-datatable-column>
+            <ngx-datatable-column name="Budget Quantity" prop="quantity"></ngx-datatable-column>
+            <ngx-datatable-column name="Work zone" prop="workZone"></ngx-datatable-column>
+          </ngx-datatable>
+    </div>
+</div>

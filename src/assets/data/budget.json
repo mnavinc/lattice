@@ -1,0 +1,30 @@
+[
+    {
+        "task": "Concrete-work 02301-22 (Rebar & Reinforcing steel)",
+        "hours": "160 hrs",
+        "materials": "Z22501 Iron bars",
+        "quantity": "300 bars",
+        "workZone": "B1-12"
+    },
+    {
+        "task": "Concrete-work  02301-43 (concrete block)",
+        "hours": "72 hrs",
+        "materials": "F4532 Cement",
+        "quantity": "45 Bags",
+        "workZone": "F2-10"
+    },
+    {
+        "task": "Drywall-work 02301-72",
+        "hours": "30 hrs",
+        "materials": "GH003 Panel",
+        "quantity": "2000sf",
+        "workZone": "A3-03"
+    },
+    {
+        "task": "Electrical-work 04301-12 (Wiring)",
+        "hours": "50 hrs",
+        "materials": "T346  Wire",
+        "quantity": "",
+        "workZone": "C1-09"
+    }
+]

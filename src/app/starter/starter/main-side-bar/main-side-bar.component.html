@@ -33,48 +33,38 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="#" class="nav-link" [routerLink]="['/list']">
             <i class="nav-icon fas fa-folder-open"></i>
             <p>
               Daily Reports
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" [routerLink]="['/list']">
-            <i class="nav-icon fas fa-folder-open"></i>
-            <p>
-              Tasks & Material
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-folder-open"></i>
-            <p>
-              Crew
-            </p>
-          </a>
-        </li>
-        <!-- <li class="nav-item has-treeview menu-open">
+        <li class="nav-item has-treeview menu-open">
           <a href="#" class="nav-link active">
             <i class="nav-icon fas fa-university"></i>
             <p>
-              Budgeting Settings
+              Production Settings
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a href="#" class="nav-link" [routerLink]="['/worker']">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Cost Codes</p>
+                <p>Workers</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link" [routerLink]="['/materials']">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Task</p>
+                <p>Material & Tools</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" [routerLink]="['/list']">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Cost Codes</p>
               </a>
             </li>
           </ul>
@@ -83,31 +73,25 @@
           <a href="#" class="nav-link active">
             <i class="nav-icon fas fa-cubes"></i>
             <p>
-              Production Settings
+              Budgeting Settings
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a href="#" class="nav-link" [routerLink]="['/budget']">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Workers</p>
+                <p>Tasks</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link active" [routerLink]="['/task-manager']">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Materials & Tools</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Progress Data</p>
+                <p>Task Manager</p>
               </a>
             </li>
           </ul>
-        </li> -->
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

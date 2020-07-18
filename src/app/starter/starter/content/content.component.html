@@ -34,7 +34,12 @@
                 [chartType]="barChartType">
               </canvas>
             </div>
-            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Other Options or other comparision buttons here</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Cost code</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Workers</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Location</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Material</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Company</button>
+            <button class="mt-2" mat-button mat-raised-button color="primary" (click)="randomize()">Weekly/Daily Analysis</button>
           </div>
         </div>
       </div>
@@ -55,7 +60,7 @@
             [headerHeight]="50"
             [footerHeight]="50"
             rowHeight="auto"
-            [limit]="10"
+            [limit]="5"
             [rows]="rows"
           >
             <ngx-datatable-column name="Task" prop="task"></ngx-datatable-column>
@@ -86,17 +91,17 @@
             </div>
           </div>
         </div>
-        <div>
-          <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Toggle Legend</button>
-          <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
-          <button mat-button mat-raised-button color="primary" (click)="addSlice()">Add Slice</button>
-          <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remove Slice</button>
-          <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Change Legend Position</button>
+        <div class="pie">
+          <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Cost code</button>
+          <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Workers</button>
+          <button mat-button mat-raised-button color="primary" (click)="addSlice()">Location</button>
+          <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Company</button>
+          <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Material</button>
         </div>
       </div>
       <div class="col">
-        <h3 class="title">Track movement</h3>
-        <div class="heatmap"></div><img src="../../../../assets/img/heatmap.jpg" alt="Track people movement" />
+        <h3 class="title">COVID-19: Track movement</h3>
+        <div class="heatmap"><img src="../../../../assets/img/heatmap.jpg" alt="Track people movement" /></div>
       </div>
     </div>
   </div>
