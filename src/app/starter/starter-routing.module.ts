@@ -7,6 +7,7 @@ import { WorkersComponent } from './starter/workers/workers.component';
 import { MaterialsComponent } from './starter/materials/materials.component';
 import { BudgetComponent } from './starter/budget/budget.component';
 import { TaskManagerComponent } from './starter/task-manager/task-manager.component';
+import { KpisComponent } from './starter/kpis/kpis.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
       {
         path: 'task-manager',
         component: TaskManagerComponent,
+      },
+      {
+        path: 'kpi',
+        component: KpisComponent,
       }
     ]
   }

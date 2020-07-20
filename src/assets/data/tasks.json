@@ -1,6 +1,14 @@
 [
   {
-    "task": "Pillars",
+    "task": "Mathew M 1340-43",
+    "Estimated": 32,
+    "Regular Time": 50,
+    "Over Time": 22,
+    "Double Time": 22,
+    "Total Hours": 22
+  },
+  {
+    "task": "Joseph P 1351-24",
     "Estimated": 240,
     "Regular Time": 33,
     "Over Time": 22,
@@ -8,7 +16,7 @@
     "Total Hours": 22
   },
   {
-    "task": "Pillars",
+    "task": "Drywall 02301-72",
     "Estimated": 240,
     "Regular Time": 33,
     "Over Time": 22,
@@ -16,7 +24,7 @@
     "Total Hours": 22
   },
   {
-    "task": "Pillars",
+    "task": "Concrete work 02301-75",
     "Estimated": 240,
     "Regular Time": 33,
     "Over Time": 22,
@@ -24,15 +32,7 @@
     "Total Hours": 22
   },
   {
-    "task": "Pillars",
-    "Estimated": 240,
-    "Regular Time": 33,
-    "Over Time": 22,
-    "Double Time": 22,
-    "Total Hours": 22
-  },
-  {
-    "task": "Pillars",
+    "task": "Foundation 02301-76",
     "Estimated": 240,
     "Regular Time": 33,
     "Over Time": 22,

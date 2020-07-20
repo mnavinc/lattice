@@ -29,8 +29,8 @@ export class ContentComponent implements OnInit {
   public barChartPlugins = [pluginDataLabels];
 
   public barChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Previous year' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Current year' }
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Planned' },
+    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Actual' }
   ];
   rows = [];
 
@@ -50,8 +50,8 @@ export class ContentComponent implements OnInit {
       },
     }
   };
-  public pieChartLabels: Label[] = [['Scheduled Time', 'Actual Time'], ['Concrete', 'Stone', 'Iron'], 'Daily Wage'];
-  public pieChartData: number[] = [300, 500, 100];
+  public pieChartLabels: Label[] = [['Security'], ['Tool Time'], 'Material Storage', 'Loading Dock'];
+  public pieChartData: number[] = [300, 500, 100, 100];
   public pieChartType: ChartType = 'pie';
   public pieChartLegend = true;
   public pieChartPlugins = [pluginDataLabels];

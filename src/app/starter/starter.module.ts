@@ -23,10 +23,11 @@ import { WorkersComponent } from './starter/workers/workers.component';
 import { MaterialsComponent } from './starter/materials/materials.component';
 import { BudgetComponent } from './starter/budget/budget.component';
 import { TaskManagerComponent } from './starter/task-manager/task-manager.component';
+import { KpisComponent } from './starter/kpis/kpis.component';
 
 
 @NgModule({
-  declarations: [StarterComponent, ContentComponent, ControlSideBarComponent, MainSideBarComponent, NavBarComponent, FooterComponent, ListComponent, PopupComponent, WorkersComponent, MaterialsComponent, BudgetComponent, TaskManagerComponent],
+  declarations: [StarterComponent, ContentComponent, ControlSideBarComponent, MainSideBarComponent, NavBarComponent, FooterComponent, ListComponent, PopupComponent, WorkersComponent, MaterialsComponent, BudgetComponent, TaskManagerComponent, KpisComponent],
   imports: [
     CommonModule,
     StarterRoutingModule,
